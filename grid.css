@@ -1,0 +1,107 @@
+/* xs - mobile
+sm - tablet
+md - laptop
+lg - desktop */
+
+[class*="col_"] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.col_xs_6 {
+
+}
+.col_xs_8 {
+    width: 66.64%;
+}
+.col_xs_9 {
+    width: 75%;
+}
+.col_xs_10 {
+    width: 89%;
+}
+.col_xs_11 {
+    width: 92%;
+}
+.col_xs_12 {
+    width: 100%;
+}
+
+
+
+/* Tablet */
+@media(min-width:768px) {
+    .col_sm_2 {
+        width: 16.666%;
+    }
+    .col_sm_3 {
+        width: 25%;
+    }
+    .col_sm_5 {
+        width: 41.7%;
+    }
+    .col_sm_6 {
+        width: 50%;
+    }    
+    .col_sm_7 {
+        width: 58.333%;
+    }    
+    .col_sm_8 {
+        width: 66.64%;
+    }
+    .col_sm_10 {
+        width: 90%;
+    }
+    .col_sm_12 {
+        width: 100%;
+    }
+}
+
+
+
+/* Laptop */
+@media(min-width:992px) {
+    .col_md_2 {
+        width: 16.666%;
+    }
+    .col_md_3 {
+        width: 25%;
+    }
+    .col_md_5 {
+        width: 42%;
+    }
+    .col_md_6 {
+        width: 50%;
+    }
+    .col_md_7 {
+        width: 58.333%;
+    }
+    .col_md_8 {
+        width: 66.64%;
+    }
+    .col_md_9 {
+        width: 75%;
+    }
+    .col_md_12 {
+        width: 100%;
+    }
+}
+
+
+
+/* Desktop */
+@media(min-width:1200px) {
+    .col_lg_2 {
+        width: 16.666%;
+    }
+    .col_lg_3 {
+        width: 25%;
+    }
+    .col_lg_6 {
+        width: 50%;
+    }
+    .col_lg_12 {
+        width: 100%;
+    }
+}
