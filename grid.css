@@ -10,7 +10,7 @@ lg - desktop */
 
 
 .col_xs_6 {
-
+    width: 50%;
 }
 .col_xs_8 {
     width: 66.64%;
@@ -39,7 +39,7 @@ lg - desktop */
         width: 25%;
     }
     .col_sm_5 {
-        width: 41.7%;
+        width: 40%;
     }
     .col_sm_6 {
         width: 50%;
