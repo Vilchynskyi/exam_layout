@@ -22,15 +22,14 @@ body {
 
 /* --------------------- Header ---------------------- */
 
-
-.row_header {
-    align-items: center;
-    justify-content: space-between;
-}
 .header {
     height: auto;
     font-family: 'Montserrat', sans-serif;
     padding-top: 15px;
+}
+.row_header {
+    align-items: center;
+    justify-content: space-between;
 }
 .logo{
     font-size: 26px;
@@ -209,7 +208,7 @@ body {
     height:4px;
     background-color: #418f9b;
     position:absolute;
-    z-index:1200;
+    z-index:130;
     bottom: -1px;
     transition:all .2s linear;
 }
@@ -768,6 +767,9 @@ body {
     .container {
         max-width: 1200px;
     }
+    .board {
+        height: 500px;
+    }
     .board::after {
         font-size: 114px;
     }
@@ -793,6 +795,16 @@ body {
 
 
 @media(max-width:767px) {
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 140;
+        padding: 15px 0;
+    }
+    .header.scrolled, .menu.scrolled {
+        background-color: #d4e5e7;
+        transition: background-color 200ms linear;
+    }
     .boards .owl-theme .owl-nav {
         position: static;
         margin-top: 20px;
@@ -801,7 +813,7 @@ body {
         margin: 20px 0;
     }
     .team_slider_block .owl-stage {
-        margin: 0;
+        margin: 15px 20px;
     }
     .about_us_text p {
         padding-left: 8vw;
@@ -818,6 +830,9 @@ body {
     }
     .about_us_link a{
         padding-left: 8vw;
+    }
+    .blog .section_title {
+        margin-top: 20px;
     }
     .instagram_username {
         font-size: 20px;

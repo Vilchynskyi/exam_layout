@@ -14,6 +14,38 @@ mobileMenu.addEventListener("click", function() {
     main.classList.toggle("main_transition");
 })
 
+
+$(document).mouseup(function(e){
+    let $header = $('.header');
+    if (!$header.is(e.target) // The target of the click isn't the container.
+    && $header.has(e.target).length === 0) // Nor a child element of the container
+    {
+        $(".navigation").removeClass("active_menu");
+        $(".mobile_menu").removeClass("active_menu");
+        $(".main").removeClass("main_transition");
+    }
+});
+
+
+// jquery method
+
+// let $mobileMenu = $(".mobile_menu");
+// let $mainMenu = $(".navigation");
+// let $main = $(".main");
+// $(document).ready(function(){
+//     $mobileMenu.click(function(){
+//         $mobileMenu.toggleClass("active_menu");
+//         $main.toggleClass("main_transition");
+//         if ($mobileMenu.hasClass("active_menu")){
+//             $mainMenu.addClass("active_menu")
+//         } else {
+//             $mainMenu.removeClass("active_menu")
+//         }
+//     });
+// });
+
+
+
 // let menuItem = document.querySelectorAll(".menu_item")
 // for (i=0; i < menuItem.length; i++) {
 // 	menuItem[i].addEventListener("click", function() {
@@ -21,6 +53,20 @@ mobileMenu.addEventListener("click", function() {
 // 		mainMenu.classList.remove("active_menu");
 // 	})
 // }
+
+
+// menu background color animation
+
+
+$(function(){
+    $(document).scroll(function(){
+        let header = $(".header");
+        let menu = $(".menu");
+        header.toggleClass("scrolled", $(this).scrollTop() > header.height());
+        menu.toggleClass("scrolled", header.hasClass("scrolled"));
+    });
+});
+
 
 
 // boards slider
@@ -52,8 +98,8 @@ $('.boards_slider').on('initialized.owl.carousel changed.owl.carousel', function
 $(document).ready(function(){
     $(".team_slider").owlCarousel({
         items: "4",
-        margin: -20,
-        mergeFit: true,
+        margin: -40,
+        slideBy: 4,
         nav: true,
         navText: ["<img src='images/prev.png'>","<img src='images/next.png'>"],
         dots: false,
@@ -74,25 +120,25 @@ $(document).ready(function(){
 
 // instagram 
 
-(function($){
-    $(window).on('load', function(){
-        $.instagramFeed({
-            'username': 'wsl',
-            'container': "#instagramFeed",
-            'display_profile': false,
-            'display_biography': false,
-            'display_gallery': true,
-            'callback': null,
-            'styling': true,
-            'items': 4,
-            'items_per_row': 2,
-            'margin': 0,
-            'lazy_load': true,
-            'on_error': console.error,
-            "image_size": 640,
-        });
-    });
-})(jQuery);
+// (function($){
+//     $(window).on('load', function(){
+//         $.instagramFeed({
+//             'username': 'wsl',
+//             'container': "#instagramFeed",
+//             'display_profile': false,
+//             'display_biography': false,
+//             'display_gallery': true,
+//             'callback': null,
+//             'styling': true,
+//             'items': 4,
+//             'items_per_row': 2,
+//             'margin': 0,
+//             'lazy_load': true,
+//             'on_error': console.error,
+//             "image_size": 640,
+//         });
+//     });
+// })(jQuery);
 
 
 // tabs 
