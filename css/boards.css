@@ -1,0 +1,158 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.menu_item a.active_page {
+    border: 1px solid #448395;
+    border-radius: 3px;
+    color: snow;
+    background-color: #448395;
+    transition: linear 0.1s;
+}
+.slogan_block {
+    margin-bottom: 250px;
+}
+
+
+/* --------------------- Filter ----------------------------------- */
+
+
+
+.filters_block {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 13px rgba(0, 0, 0, 0.3);
+    padding: 15px 20px 1px;
+}
+.filter_item {
+    margin-bottom: 30px;
+}
+.filter_item_title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.filter_list_value {
+    padding-left: 5px;
+}
+.filter_value {
+    margin-bottom: 5px;
+}
+.filter_value span:hover{
+    text-decoration: underline;
+}
+.filter_value input[type="checkbox"] {
+    display: none;
+}
+.filter_value label {
+    cursor: pointer;
+    position: relative;
+}
+.filter_value label:before {
+    content: '';
+    display: inline-block;
+    border: 1px solid #418f9b;
+    border-radius: 4px;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    top: 3px;
+    cursor: pointer;
+}
+.filter_value span {
+    margin-left: 25px;
+}
+.filter_value input[type="checkbox"]:checked + label:before {
+    background-color: #418f9b;
+}
+.price_inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.price_inputs input {
+    width: 48%;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 2px solid #418f9b;
+}
+
+/* --------------------- Products ----------------------------------- */
+
+
+.products_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: flex-start;
+}
+/* .products_list:after {
+    content: '';
+    flex: auto;
+} */
+.product_item {
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0px 2px 13px rgba(0, 0, 0, 0.3);
+    height: 300px;
+    margin-bottom: 25px;
+    background: rgb(65,143,155);
+    background: linear-gradient(135deg, rgba(65,143,155,1) 20%, rgba(255,255,255,1) 20%);
+    position: relative;
+    overflow: hidden;
+}
+.product_photo {
+    width: 100%;
+    height: 100%;
+}
+
+.product_photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.product_overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all ease 0.3s;
+}
+.product_info {
+    opacity: 0;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 0 0 5px 5px;
+    background-color: #418f9b;
+    position: absolute;
+    bottom: -100%;
+    padding-top: 15px;
+    width: 100%;
+    transition: all ease 0.3s;
+}
+.product_info p {
+    line-height: 1em;
+    margin-bottom: 10px;
+}
+.product_item:hover .product_overlay {
+    opacity: 1;    
+}
+.product_item:hover .product_info {
+    opacity: 1;
+    bottom: 0;
+}
+
+
+
+/* _______________ Tablet _______________ */
+
+
+@media(min-width:768px) {
+    .product_item {
+        flex-basis: 30%;
+    } 
+}

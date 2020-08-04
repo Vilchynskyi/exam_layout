@@ -120,25 +120,25 @@ $(document).ready(function(){
 
 // instagram 
 
-// (function($){
-//     $(window).on('load', function(){
-//         $.instagramFeed({
-//             'username': 'wsl',
-//             'container': "#instagramFeed",
-//             'display_profile': false,
-//             'display_biography': false,
-//             'display_gallery': true,
-//             'callback': null,
-//             'styling': true,
-//             'items': 4,
-//             'items_per_row': 2,
-//             'margin': 0,
-//             'lazy_load': true,
-//             'on_error': console.error,
-//             "image_size": 640,
-//         });
-//     });
-// })(jQuery);
+(function($){
+    $(window).on('load', function(){
+        $.instagramFeed({
+            'username': 'wsl',
+            'container': "#instagramFeed",
+            'display_profile': false,
+            'display_biography': false,
+            'display_gallery': true,
+            'callback': null,
+            'styling': true,
+            'items': 4,
+            'items_per_row': 2,
+            'margin': 0,
+            'lazy_load': true,
+            'on_error': console.error,
+            "image_size": 640,
+        });
+    });
+})(jQuery);
 
 
 // tabs 
@@ -175,7 +175,7 @@ let listOfButtonBlocks = [].map.call(listOfCharacteristicBlocks, function(charac
             let width = $(btn).width();
             $(currentSlider).css({"left":+ position.left,"width":width});
         })
-        return btn
+        return btn;
     })
-    return characteristicBlocks
+    return characteristicBlocks;
 })
