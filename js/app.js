@@ -15,44 +15,19 @@ mobileMenu.addEventListener("click", function() {
 })
 
 
+// close mobile menu when clicked outside
+
+
 $(document).mouseup(function(e){
-    let $header = $('.header');
-    if (!$header.is(e.target) // The target of the click isn't the container.
-    && $header.has(e.target).length === 0) // Nor a child element of the container
+    let header = $('.header');
+    if (!header.is(e.target) // The target of the click isn't the container.
+    && header.has(e.target).length === 0) // Nor a child element of the container
     {
         $(".navigation").removeClass("active_menu");
         $(".mobile_menu").removeClass("active_menu");
         $(".main").removeClass("main_transition");
     }
 });
-
-
-// jquery method
-
-// let $mobileMenu = $(".mobile_menu");
-// let $mainMenu = $(".navigation");
-// let $main = $(".main");
-// $(document).ready(function(){
-//     $mobileMenu.click(function(){
-//         $mobileMenu.toggleClass("active_menu");
-//         $main.toggleClass("main_transition");
-//         if ($mobileMenu.hasClass("active_menu")){
-//             $mainMenu.addClass("active_menu")
-//         } else {
-//             $mainMenu.removeClass("active_menu")
-//         }
-//     });
-// });
-
-
-
-// let menuItem = document.querySelectorAll(".menu_item")
-// for (i=0; i < menuItem.length; i++) {
-// 	menuItem[i].addEventListener("click", function() {
-// 		mobileMenu.classList.remove("active_menu");
-// 		mainMenu.classList.remove("active_menu");
-// 	})
-// }
 
 
 // menu background color animation
