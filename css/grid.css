@@ -3,10 +3,7 @@ sm - tablet
 md - laptop
 lg - desktop */
 
-[class*="col_"] {
-    padding-left: 15px;
-    padding-right: 15px;
-}
+
 
 
 .col_xs_6 {

@@ -73,7 +73,6 @@ $('.boards_slider').on('initialized.owl.carousel changed.owl.carousel', function
 $(document).ready(function(){
     $(".team_slider").owlCarousel({
         items: "4",
-        margin: -40,
         slideBy: 4,
         nav: true,
         navText: ["<img src='images/prev.png'>","<img src='images/next.png'>"],
@@ -84,8 +83,10 @@ $(document).ready(function(){
             },
             768:{
                 items:2,
+                margin: -40,
             },
             992:{
+                margin: -40,
                 items:4,
             }
         } 
@@ -95,25 +96,25 @@ $(document).ready(function(){
 
 // instagram 
 
-(function($){
-    $(window).on('load', function(){
-        $.instagramFeed({
-            'username': 'wsl',
-            'container': "#instagramFeed",
-            'display_profile': false,
-            'display_biography': false,
-            'display_gallery': true,
-            'callback': null,
-            'styling': true,
-            'items': 4,
-            'items_per_row': 2,
-            'margin': 0,
-            'lazy_load': true,
-            'on_error': console.error,
-            "image_size": 640,
-        });
-    });
-})(jQuery);
+// (function($){
+//     $(window).on('load', function(){
+//         $.instagramFeed({
+//             'username': 'wsl',
+//             'container': "#instagramFeed",
+//             'display_profile': false,
+//             'display_biography': false,
+//             'display_gallery': true,
+//             'callback': null,
+//             'styling': true,
+//             'items': 4,
+//             'items_per_row': 2,
+//             'margin': 0,
+//             'lazy_load': true,
+//             'on_error': console.error,
+//             "image_size": 640,
+//         });
+//     });
+// })(jQuery);
 
 
 // tabs 

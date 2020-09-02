@@ -1,0 +1,22 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* --------------------- Footer ----------------------------------- */
+
+
+.footer {
+    height: auto;
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.footer_row {
+    justify-content: space-between;
+}
+.footer_links_block {
+    margin-left: 0;
+}
+

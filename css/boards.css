@@ -4,13 +4,7 @@ body {
 .main {
     margin-bottom: 40px;
 }
-.menu_item a.active_page {
-    border: 1px solid #448395;
-    border-radius: 3px;
-    color: snow;
-    background-color: #448395;
-    transition: linear 0.1s;
-}
+
 .slogan_block {
     margin-bottom: 250px;
 }
