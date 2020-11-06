@@ -1,3 +1,5 @@
+// this is my git practice with branch
+
 // Hamburger menu 
 
 let mobileMenu = document.querySelector(".mobile_menu");
