@@ -18,6 +18,10 @@ body {
     background-repeat: no-repeat;
     background-position: center -400px;
 }
+[class*="col_"]{
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 
 /* --------------------- Header ---------------------- */
